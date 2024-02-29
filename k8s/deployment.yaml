@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nextjs
+spec:
+  selector:
+    matchLabels:
+      app: nextjs
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: nextjs
+    spec:
+      containers:
+      - name: nextjs
+        image: gcr.io/cicd-practice-415610/node-kubernetes:v0.0.1
+        ports:
+        - containerPort: 3001
+      restartPolicy: Always
