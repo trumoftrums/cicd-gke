@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nextjs-cicd
-        image: gcr.io/cicd-practice-415610/node-kubernetes:v0.0.1
+        image: gcr.io/PROJECT_ID/IMAGE:TAG
         ports:
         - containerPort: 3001
       restartPolicy: Always
