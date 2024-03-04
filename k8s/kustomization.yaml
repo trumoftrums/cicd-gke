@@ -9,4 +9,4 @@ kind: Kustomization
 #     env: config-map.env
 resources:
   - service.yaml
-  - development.yaml
+  - deployment.yaml
